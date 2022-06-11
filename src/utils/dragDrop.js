@@ -1,4 +1,6 @@
-var count = 0;
+let count = 0;
+import { addCommand } from "../redux/actions";
+import store from "./../redux/store";
 
 export function allowDrop(ev) {
   ev.preventDefault();
@@ -20,6 +22,9 @@ export function drop(ev) {
   const nodeCopy = document.getElementById(id).cloneNode(true);
 
   nodeCopy.id = "dragged" + id + count++;
+
+  const sprite = store.getState().currentTab;
+  store.dispatch(addCommand(sprite, nodeCopy.id, nodeCopy.textContent));
 
   nodeCopy.addEventListener("dragstart", drag);
 

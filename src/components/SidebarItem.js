@@ -4,6 +4,7 @@ import BlockWrapper from "./BlockWrapper";
 import getBlockColor from "../utils/getBlockColor.js";
 import { getTextIcon } from "../utils/stringFormatter";
 import { drag } from "../utils/dragDrop";
+
 const SidebarItem = ({ title, data }) => {
   return (
     <>
