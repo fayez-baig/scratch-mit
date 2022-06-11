@@ -3,7 +3,7 @@ import Icon from "./Icon";
 import BlockWrapper from "./BlockWrapper";
 import getBlockColor from "../utils/getBlockColor.js";
 import { getTextIcon } from "../utils/stringFormatter";
-
+import { drag } from "../utils/dragDrop";
 const SidebarItem = ({ title, data }) => {
   return (
     <>
@@ -11,6 +11,8 @@ const SidebarItem = ({ title, data }) => {
 
       {data.map((_d, i) => (
         <div
+          draggable
+          onDragStart={drag}
           id={title + i}
           key={title + i}
           className={`flex flex-row flex-wrap bg-${getBlockColor(
