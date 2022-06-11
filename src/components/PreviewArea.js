@@ -1,10 +1,11 @@
 import React from "react";
 import CatSprite from "./CatSprite";
 
-export default function PreviewArea() {
+const PreviewArea = () => {
   return (
-    <div className="flex-none h-full overflow-y-auto p-2">
+    <div className="flex-none h-full p-2 overflow-y-auto">
       <CatSprite />
     </div>
   );
-}
+};
+export default PreviewArea;
