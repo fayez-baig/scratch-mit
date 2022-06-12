@@ -1,5 +1,4 @@
 const getBlockColor = (blockName) => {
-  console.log(blockName);
   switch (blockName) {
     case "Control":
       return "red";
