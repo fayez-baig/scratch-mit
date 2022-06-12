@@ -31,7 +31,7 @@ $ npm install
 > Navigate to `http://localhost:3000/`.
 > The app will automatically reload if you change any of the source files.
 
-> Alternatively, Please have a look on [Live-Demo](https://fayez-sportzinteractive.web.app/)
+> Alternatively, Please have a look on [Live-Demo](https://fayez-scratch-mit.vercel.app/)
 
 ---
 
