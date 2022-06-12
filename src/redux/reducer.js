@@ -9,6 +9,7 @@ const INITIAL_STATE = {
 };
 
 const reducer = (state = INITIAL_STATE, action) => {
+  console.log(action.payload);
   switch (action.type) {
     case actionTypes.ADD_TAB:
       return {
@@ -79,8 +80,10 @@ const reducer = (state = INITIAL_STATE, action) => {
       return {
         ...state,
         commands: {
-          ...commands,
-          [action.payload.sprite]: action.payload.cmd,
+          ...state.commands,
+          [action.payload.sprite]: state.commands[action.payload.sprite].filter(
+            (cmd) => cmd.cmdID !== action.payload.cmdId
+          ),
         },
       };
 
