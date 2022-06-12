@@ -4,7 +4,7 @@
 
 > Technology used: `React 17` , `Tailwind css`
 
-> Live application can be accessed from : [Live-Demo](https://fayez-scratch-mit.vercel.app/)
+> Live application can be accessed from : [Live-Demo](https://fayez-mit-scratch.netlify.app/)
 
 ---
 
@@ -31,7 +31,7 @@ $ npm install
 > Navigate to `http://localhost:3000/`.
 > The app will automatically reload if you change any of the source files.
 
-> Alternatively, Please have a look on [Live-Demo](https://fayez-scratch-mit.vercel.app/)
+> Alternatively, Please have a look on [Live-Demo](https://fayez-mit-scratch.netlify.app/)
 
 ---
 
