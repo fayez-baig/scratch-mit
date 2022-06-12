@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Icon({ name, size = 20, className = "", attrrr }) {
+export default function Icon({ name, size = 20, className = "" }) {
   return (
     <svg
       className={`fill-current ${className}`}
