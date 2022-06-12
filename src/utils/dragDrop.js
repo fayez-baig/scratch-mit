@@ -1,5 +1,5 @@
 let count = 0;
-import { addCommand } from "../redux/actions";
+import { addCommand, removeTab } from "../redux/actions";
 import store from "./../redux/store";
 
 export function allowDrop(ev) {
@@ -45,4 +45,5 @@ export function deleteDiv(ev, force = false) {
 export function deleteSprite(ev) {
   const id = ev.dataTransfer.getData("dragId");
   if (!id.startsWith("sprite")) return;
+  store.dispatch(removeTab(id.split("-")[1]));
 }
