@@ -1,4 +1,5 @@
 const getBlockColor = (blockName) => {
+  console.log(blockName);
   switch (blockName) {
     case "Control":
       return "red";
@@ -8,7 +9,6 @@ const getBlockColor = (blockName) => {
       return "purple";
     case "Motion":
       return "blue";
-
     default:
       return "green";
   }

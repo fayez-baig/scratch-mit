@@ -36,7 +36,6 @@ export function deleteDiv(ev, force = false) {
 
   const id = ev.dataTransfer.getData("dragId");
 
-  console.log(id);
   if (!id.startsWith("dragged") && !force) return;
 
   const sprite = store.getState().currentTab;

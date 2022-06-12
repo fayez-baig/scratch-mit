@@ -15,7 +15,6 @@ const PreviewArea = () => {
     toast.success("Reset", { position: "bottom-left" });
   };
   const execute = async (e) => {
-    console.log(e.target.dataset);
     if (e.target.dataset.run) await commandParser(mergeSprite(commands));
     if (e.target.dataset.reset) reset();
   };
