@@ -31,6 +31,9 @@ const SidebarItem = ({ title, data }) => {
           <BlockWrapper text={getTextIcon(_d, 2)} />
         </div>
       ))}
+      <div className="hidden bg-purple-500" />
+      <div className="hidden bg-blue-500" />
+      <div className="hidden bg-yellow-500" />
     </>
   );
 };
